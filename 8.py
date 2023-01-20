@@ -67,8 +67,4 @@
  #   print('Месяц содержит 31 день')
 
 print('Hi, Python')
-
-
-
-
 print('Something new from OLEH')

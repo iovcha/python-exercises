@@ -66,8 +66,7 @@
 #else:
  #   print('Месяц содержит 31 день')
 
-
-#5
+print('Hi, Python')
 
 
 

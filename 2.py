@@ -1,17 +1,22 @@
-#Программа, которую вы напишете, должна начинаться с запроса у пользователя суммы заказа в ресторане.
-# После этого должен быть произведен
-#расчет налога и  чаевых официанту. Вы можете использовать принятую
-#в вашем регионе налоговую ставку для подсчета суммы сборов. В качестве
-#чаевых мы оставим 18 % от стоимости заказа без учета налога. На выходе программа должна отобразить отдельно налог,
-# сумму чаевых и итог,
-#включая обе составляющие. Форматируйте вывод таким образом, чтобы
-#все числа отображались с двумя знаками после запятой.
-# налог и чаевые
-tax_rate = 0.05
-tip_rate = 0.18
-cost = float(input('Принесите, пожалуйста счёт  '))
-tip = cost * 0.18
-tax = (cost - tip) * 0.05
-rezult = cost + tip + tax
-print('Чаевые: %.2f, Налог: %.2f., Итог: %.2f' % (tip, tax, rezult))
+month = str(input('Введите  название месяца: '))
+day = int(input('Какая датa вас интересует? '))
+# Определяем сезон
+if month in ('January', 'February', 'March'):
+    season = 'winter'
+elif month in ('April', 'May', 'June'):
+    season = 'spring'
+elif month in ('July', 'August', 'September'):
+    season = 'summer'
+else:
+    season = 'autumn'
+
+if month == 'March' and day > 19:
+    season = 'spring'
+elif month == 'June' and day > 20:
+    season = 'summer'
+elif month == 'September' and day > 21:
+    season = 'autumn'
+elif month == 'December' and day > 20:
+    season = 'winter'
+print("Season is",season)
 

@@ -49,8 +49,8 @@ while not password_correct:
         password_correct = True
         continue
     password = input('Введите пароль еще раз: ')
-    if count > 2:
-        print('Использовано 3 попытки ,попребуйте позже')
+    if count == 3:
+        print('Использовано 3 попытки ,попробуйте позже')
         break
 
 

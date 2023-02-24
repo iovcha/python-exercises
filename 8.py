@@ -95,7 +95,7 @@ if flag == True:
     print("Матрмца  является симметричной")
 else:
     print("Матрмца не является симметричной ")
-
+print(transposed_matr)
 
 
 

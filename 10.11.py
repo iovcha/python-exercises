@@ -1,6 +1,17 @@
 string = input()
 a = []
-for i in string:
-    if i in "0123456789":
-        a.append(int(i))
-print(len(a), sum(a))
+for i in range(len(string)):
+    if string[i] == '(':
+        a.append(string[i])
+        continue
+    if string[i] == ')' and a:
+        if (a[-1] + string[i] == '()'):
+            a.pop()
+    else:
+        a.append(string[i])
+if a == []:
+    print('YES')
+else:
+    print('NO')
+
+

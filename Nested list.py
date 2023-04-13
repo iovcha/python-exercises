@@ -80,7 +80,7 @@
 # 5.1 ##еще одно решение
 # n, m = map(int, input().split())
 # x = [[int(k) for k in input().split()] for i in range(n)]  # [[5, 9, 2, 6], [6, 2, 4, 3], [1, 2, 8, 7]]
-# x_columns = list(zip(*x))  # [(5, 6, 1), (9, 2, 2), (2, 4, 8), (6, 3, 7)]
+# x_columns = list(zip(*x))  # [(5, 6, 1), (9, 2, 2), (2, 4, 8), (6, 3, 7)]# получение столбца!!!
 # for a in x:
 #     print(sum(a), end=' ')
 # print()

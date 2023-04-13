@@ -163,15 +163,16 @@
 ##10 A. Тортминатор
 r, c = map(int, input().split())
 a = [input().upper() for _ in range(r)]
-count_row = 0
-count_column = 0
-
-for i in range(r):  # движение по строкам
-    if 'S' not in a[i]:
-        count_row += 1
-
-for j in range(c):  # движение по столбцам
-    b = [column[j] for column in a]
-    if 'S' not in b:
-        count_column += 1
-print(count_row * c + count_column * (r - count_row))
+# count_row = 0
+# count_column = 0
+#
+# for i in range(r):  # движение по строкам
+#     if 'S' not in a[i]:
+#         count_row += 1
+#
+# for j in range(c):  # движение по столбцам
+#     b = [column[j] for column in a]
+#     if 'S' not in b:
+#         count_column += 1
+# print(count_row * c + count_column * (r - count_row))
+###print(list(zip(*a))) получение столбца

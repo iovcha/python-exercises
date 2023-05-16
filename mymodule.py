@@ -122,3 +122,11 @@ while i ** 2 <= n:
     i += 1
 a.sort()
 print(a)
+
+N, k = list(map(int, input().split()))
+kegelban = ['I'] * N
+for i in range(k):
+    start, end = list(map(int, input().split()))
+    for j in range(start - 1, end):
+        kegelban[j] = '.'
+print(''.join(kegelban))

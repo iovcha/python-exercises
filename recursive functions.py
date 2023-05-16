@@ -186,8 +186,7 @@ def quick_sort(s: list):
     """Быстрая сортировка """
     if len(s) <= 1:
         return s
-    elem = s[
-        int(len(s) // 2)]  # можно взять любой элемент , например s[0] or s[-1] or s[1] он от которого отталкиваються
+    elem = s[int(len(s) // 2)]  # можно взять любой элемент , например s[0] or s[-1] or s[1] он от которого отталкиваються
     left = [i for i in s if i < elem]
     centr = [i for i in s if i == elem]
     right = [i for i in s if i > elem]

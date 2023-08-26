@@ -234,6 +234,7 @@ def factorial(n):
         fact *= num
     return fact
 
+
 def trailing_zeros(n):
     a = []
     for i in range(len(str(factorial(n))) - 1, -1, -1):
@@ -244,10 +245,12 @@ def trailing_zeros(n):
                 break
     return len(a)
 
+
 ###20
 def count_AGTC(dna):
     a = [dna.count('A'), dna.count('G'), dna.count('T'), dna.count('C')]
     return tuple(a)
+
 
 ####через словарь
 # def count_AGTC(dna: str):
@@ -256,3 +259,32 @@ def count_AGTC(dna):
 #         d[c] += 1
 #     return tuple(d.values())
 # print(count_AGTC('AGGTC'))
+
+####
+PI = 3.14
+
+# def circle(r):
+#     """вычисляющую площадь круга."""
+#     l_circle = 2 * PI * r
+#     return l_circle
+#
+#
+# def cylinder(r, h, a = 'S_bok')):
+#     """вычисляет площадь цилиндра.В одном из передаваемых параметров в функцию cylinder()
+#      пользователь должен определять, нужно ли вычислить только площадь боковой поверхности цилиндра
+#      или полную площадь цилиндра"""
+#     global s
+#     if a == 'S_bok':
+#         s += circle(r) * h
+#         print(s)
+#     else:
+#         s += (circle(r) * 2) + (circle(r) * h)
+#         print(s)
+
+
+# s = 0
+# cylinder(2, 8)
+
+
+
+

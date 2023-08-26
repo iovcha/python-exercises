@@ -130,3 +130,20 @@ for i in range(k):
     for j in range(start - 1, end):
         kegelban[j] = '.'
 print(''.join(kegelban))
+
+def create_file_with_numbers(n):
+    """Функция должна создать файл с название "range_<number>.txt" и
+     наполнить его целыми числами от 1 до n включительно,
+     причем каждое число записывается  в отдельной строке"""
+    with open(f'range_{n}.txt', mode='w', encoding='utf-8') as fw:
+        fw.write('\n'.join(map(str, range(1, n + 1))))
+
+
+#Для поиска самого длинного слова:
+
+with open('test.txt', 'r', encoding='utf-8') as f:
+  longest_word = max(f.read().split(), key=lambda i: len(i))
+#Для добавления найденного слова в конец файла в верхнем регистре:
+
+with open('test.txt', 'a', encoding='utf-8') as f:
+  f.write('\n' + longest_word.upper())

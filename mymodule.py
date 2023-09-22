@@ -1,18 +1,3 @@
-def numeral(num):
-    match num:
-        case 1: return "First"
-        case 2: return "Second"
-        case 3: return "Thid"
-        case 4: return "Fouth"
-        case 5: return "Fifth"
-        case 6: return "Sixth"
-        case 7: return "Seventh"
-        case 8: return "Eighth"
-        case 9: return "Ninths"
-        case 10: return "Tenth"
-        case 11: return "Eleventh"
-        case 12: return "Twelfth"
-        case _: return ""
 
 def count_rank_number(n):#розряд числа
     count = 1
